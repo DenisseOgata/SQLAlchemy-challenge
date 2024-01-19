@@ -1,17 +1,15 @@
 # SQLAlchemy-challenge
 
-#Part 1: Analyze and Explore the Climate Data
-In this section, by using Python and SQLAlchemy to do a basic climate analysis and data exploration of your climate database. Specifically, you’ll use SQLAlchemy ORM queries, Pandas, and Matplotlib. To do so, complete the following steps:
+#Part 1: Analyzed and Explored the Climate Data by using Python and SQLAlchemy to do a basic climate analysis and data exploration on the database. Used SQLAlchemy ORM queries, Pandas, and Matplotlib for the follwing: 
+ 
 
-1. Note that you’ll use the provided files (climate_starter.ipynb and hawaii.sqlite) to complete your climate analysis and data exploration.
+1. Used the SQLAlchemy create_engine() function to connect to SQLite database.
 
-2. Use the SQLAlchemy create_engine() function to connect to your SQLite database.
+2. Used the SQLAlchemy automap_base() function to reflect tables into classes, and then save references to the classes named station and measurement.
 
-3. Use the SQLAlchemy automap_base() function to reflect your tables into classes, and then save references to the classes named station and measurement.
+3. Linked Python to the database by creating a SQLAlchemy session.
 
-4. Link Python to the database by creating a SQLAlchemy session.
-
-5. Perform a precipitation analysis and then a station analysis by completing the steps in the following two subsections.
+4. Performed a precipitation analysis and then a station analysis by completing the steps in the following two subsections.
 
 #Precipitation Analysis
 
@@ -47,7 +45,8 @@ In this section, by using Python and SQLAlchemy to do a basic climate analysis a
 5. Close your session.
 
    #Part 2: Design Your Climate App
-Now that you’ve completed your initial analysis, design a Flask API based on the queries that you just developed. To do so, use Flask to create your routes as follows:
+Designed a Flask API based on the developed queries. Created routes with Flask for the following:
+
    * Start at the homepage.
    * List all the available routes.
    * Convert the query results from your precipitation analysis (i.e. retrieve only the last 12 months of data) to       a dictionary using date as the key and prcp as the value.
